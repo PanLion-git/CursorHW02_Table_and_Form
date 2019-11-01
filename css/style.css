@@ -1,0 +1,322 @@
+* { font-family: 'Times New Roman', Times, serif; }
+
+body {
+  width: 90%; 
+  /* border: 1px solid red;*/
+  margin-left: auto;
+  margin-right: auto;
+
+  /* font-family: 'Times New Roman', Times, serif; */
+}
+
+header {
+  background-color: rgb(216, 203, 203);
+  text-align: center;
+  margin-bottom: 16px;
+  padding: 8px 0 8px 0;
+}
+
+.header1 {
+  font-size: xx-large;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header2 {
+  font-size: x-large;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+
+.chapter_separator {
+  border: none;
+  background-color: silver;
+  height: 7px;
+  width: 75%;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+
+
+
+
+
+.table_People {
+  border: 15px ridge rgb(168, 175, 168);
+  background-color: silver;
+  padding: 10px;
+  margin: 0 auto;
+
+  /* border-collapse: collapse; */
+  border-collapse: separate;
+  width: 90%;
+  z-index: 2;
+}
+
+.table_People th {
+  background: rgb(32, 45, 182);
+  font-size: 24px;
+}
+
+.table_People tr:nth-child(n) {
+  background: rgb(118, 135, 243);
+}
+
+.table_People tr:nth-child(2n) {
+  background: rgb(171, 187, 239);
+}
+
+.table_People tr:last-child {
+  background: rgb(73, 73, 207);
+  text-align: center;
+  font-style: italic;
+}
+
+.table_People th, .table_People td {
+  border: dotted 1px rgb(207, 17, 17);
+  /* border: inherit; */
+  padding: 0 15px;
+}
+
+.table_People tr:hover {
+  font-weight: bold;
+}
+
+
+.table_Abbiturient {
+  transform: rotate(135deg) scale(0.50);
+  /* transform: ; */
+  background-color: transparent;
+  z-index: 1;
+}
+
+
+.input_Data {
+  display: flexbox;
+  border: solid 3px lightblue;
+  width: 90%;
+  margin: auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.input_Data span {
+  font-size: 24px;
+  font-weight: bold;
+  /* display: block; */
+}
+
+.input_Data input {
+  font-size: 24px;
+  /* font-weight: bold; */
+}
+
+.input_Data textarea {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.input_Data button {
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 3px 5px 3px rgb(132, 129, 131);
+  /* padding: 12px 36px; */
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgb(171, 187, 239);
+  border-radius: 15px;
+  /* margin: 12px 60px; */
+  /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.input_Data div {
+  /* border: solid 1px blue; */
+}
+
+
+
+.input_Text, .input_TextArea {
+  border: solid 1px lightblue;
+  font-size: 24px;
+  display: block;
+  border-radius: 5px;
+  background-color: lightskyblue;
+  /* margin: 12px; */
+  padding-left: 12px;
+  padding-right: 12px;
+
+  /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.input_Text {
+  margin: 12px;
+  display: block;
+  width: 90%;
+}
+
+.input_TextArea {
+  width: 85%;
+  /* margin: 3%; */
+  /* margin: auto; */
+  height: 375px;
+  text-align: justify;
+  margin: 12px;
+}
+
+.input_Text:active {
+  background: lightskyblue;
+}
+
+.input_Text:focus {
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.input_Text:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 2.5s ease;}
+.input_TextArea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 2.5s ease;}
+
+/* Затухання: */
+/* input::-webkit-input-placeholder       {opacity: 1; transition: opacity 2.5s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 2.5s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 2.5s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 2.5s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 2.5s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 2.5s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 2.5s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 2.5s ease;} */
+
+/* Зсув вправо */
+/* input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 2.5s ease;}
+input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 2.5s ease;}
+input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 2.5s ease;}
+input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 2.5s ease;}
+input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 2.5s ease;}
+input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 2.5s ease;}
+input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 2.5s ease;}
+input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 2.5s ease;} */
+ 
+/* Зсув вниз */
+/* input::-webkit-input-placeholder       {line-height: 20px;  transition: line-height 0.5s ease;}
+input::-moz-placeholder                {line-height: 20px;  transition: line-height 0.5s ease;}
+input:-moz-placeholder                 {line-height: 20px;  transition: line-height 0.5s ease;}
+input:-ms-input-placeholder            {line-height: 20px;  transition: line-height 0.5s ease;}
+input:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
+input:focus::-moz-placeholder          {line-height: 100px; transition: line-height 0.5s ease;}
+input:focus:-moz-placeholder           {line-height: 100px; transition: line-height 0.5s ease;}
+input:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;} */
+ 
+.input_Check, .input_Radio {
+  height: 24px;
+  width: 24px;
+  /* margin: 12px; */
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid red;
+
+}
+
+.input_CheckLabel, .input_RadioLabel {
+  font-size: 24px;
+  background-color: lightskyblue;
+  /* margin: 12px; */
+  margin-top: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 5px;
+}
+
+.sidebar {
+  margin-top: 16px;
+  float: right;
+  /* border: solid 1px blue; */
+  /* display: inline-block; */
+  width: 50%;
+  /* height: 90%; */
+  min-height: 100%;
+}
+
+.main {
+  /* border: solid 1px green; */
+  margin-top: 16px;
+  margin-left: 16px;
+  width: 45%;
+}
+
+.formFooter {
+  /* border: solid 1px red; */
+  width: 50%;
+  margin: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.formFooter div {
+  /* border: blue 1px solid; */
+}
+
+.buttonReset, .buttonSubmit {
+  width: 90%;
+}
+
+.buttonReset {
+  /* float: right; */
+  content: "";
+}
+
+.divResetButton {
+  width: 45%;
+  /* border: blue 1px solid; */
+}
+
+.divSubmitButton {
+  width: 45%;
+  float: right;
+  /* border: blue 1px solid; */
+}
+
+
+.divColumns {
+  border: 1px solid red;
+  /* height: 16px; */
+  display: none;
+}
+
+.divColumns div {
+  border: 1px solid red;
+  /* height: 16px; */
+  /* margin-top: 1%;
+  margin-bottom: 1%; */
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.divColumnLeft {
+  width: 33%;
+  float: left;
+  background-color: green;
+}
+.divColumnRight
+{
+  width: 33%;
+  float: right;
+  /* display: flex; */
+  clear: flex;
+  background-color: dimgray;
+}
+.divColumnCenter {
+  width: 33%;
+  margin: auto;
+}
+
+.divTitle, .divFooter {
+  width: 95%;
+  margin: auto;
+  background-color: darkturquoise;
+}
