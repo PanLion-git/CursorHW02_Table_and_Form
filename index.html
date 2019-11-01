@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>FrontEnd Lesson 2 </title>
+</head>
+
+<body>
+  <header>
+    <h1 class="header1">Таблиці та форми HTML</h1>
+    <!-- <h2 class="header2">(термінал)</h2> -->
+  </header>
+
+  <hr class="chapter_separator">
+
+  <div class="container">
+    <table class="table_People">
+      <caption>
+        <h2 class="header2">Студенти</h2>
+        <!-- Студенти -->
+      </caption>
+      <tr>
+        <th>Ім'я</th>
+        <th>Прізвище</th>
+        <th>Телефон</th>
+        <th>E-Mail</th>
+      </tr>
+
+      <tr>
+        <td>Василь</td>
+        <td>Тарнавський</td>
+        <td>067-567-01-27</td>
+        <td>v.tarnavskiy@gmail.com</td>
+      </tr>
+
+      <tr>
+        <td>Богдан</td>
+        <td>Лужецький</td>
+        <td>050-387-72-98</td>
+        <td>b.lugeckiy@ukr.net</td>
+      </tr>
+
+      <tr>
+        <td>Остап</td>
+        <td>Запотічний</td>
+        <td>063-123-67-34</td>
+        <td>o.zapotichnuy@ua</td>
+      </tr>
+
+      <tr>
+        <td>Назар</td>
+        <td>Левандівський</td>
+        <td>097-567-32-01</td>
+        <td>n.levandivskiy@gmail.com</td>
+      </tr>
+
+      <tr>
+        <td>Євгеній</td>
+        <td>Полатайко</td>
+        <td>095-957-27-81</td>
+        <td>e.polataykoy@ukr.net</td>
+      </tr>
+
+      <tr>
+        <td colspan="4">Підсумок</td>
+      </tr>
+
+    </table>
+
+    <!-- <table class="table_Abbiturient">
+      <caption>
+        <h2>Абітурієнти</h2>
+      </caption>
+      <tr>
+        <th>Ім'я</th>
+        <th>Прізвище</th>
+        <th>Телефон</th>
+        <th>E-Mail</th>
+      </tr>
+
+      <tr>
+        <td>Василь</td>
+        <td>Васильків</td>
+        <td>067-561-11-27</td>
+        <td>v.vasilkiv@gmail.com</td>
+      </tr>
+
+      <tr>
+        <td>Іван</td>
+        <td>Іванків</td>
+        <td>067-337-22-78</td>
+        <td>i.ivankiv@gmail.com</td>
+      </tr>
+
+    </table> -->
+
+  </div>
+
+  <hr class="chapter_separator">
+
+  <div class="container">
+
+    <form class="input_Data" action="feedback.html" target="blank" id="idFormInputData">
+      <!-- <form class="input_Data" action="#" target="blank" method="post" autocomplete="off"> -->
+
+      <div class="sidebar">
+        <span>Надайте свій відгук</span><br>
+        <textarea class="input_TextArea" name="fidback" id="fidback1" placeholder="Відгук (до 500 символів)"
+          maxlength="500" required></textarea>
+        <!-- cols="25" rows="5" -->
+      </div>
+
+
+      <div class="main">
+        <span>Введіть Ваше прізвище та ім'я</span><br>
+        <input class="input_Text" type="text" name="surName" placeholder="Вкажіть ваше прізвище" required>
+        <input class="input_Text" type="text" name="firstName" placeholder="Вкажіть ваше ім'я" required>
+
+        <span>Вкажіть Вашу стать</span><br>
+        <input class="input_Radio" type="radio" id="genderMan" name="gender" form="idFormInputData" value="man" checked>
+        <label class="input_RadioLabel" for="genderMan"> Чоловік </label><br>
+        <input class="input_Radio" type="radio" id="genderWoman" name="gender" form="idFormInputData" value="woman">
+        <label class="input_RadioLabel" for="genderWoman"> Жінка </label><br>
+
+        <span>Виберіть місто проживання</span><br>
+        <select class="input_Text" name="town">
+            <option value="00000" label="Виберіть місто" disabled="disabled" selected="selected">
+            <option value="01000" label="Київ">
+            <option value="79000" label="Львів">
+            <option value="65000" label="Одеса">
+            <option value="49000" label="Дніпро">
+            <option value="61000" label="Харків">
+            <option value="21000" label="Вінниця">
+            <option value="46000" label="Тернопіль">
+            <option value="46000" label="Івано-Франківськ">
+        </select>
+
+        <span>Виберіть мову</span><br>
+        <input class="input_Check" type="checkbox" id="Id_languageUkr" name="languageUkr" value="true">
+        <label class="input_CheckLabel" for="Id_languageUkr">Українська</label><br>
+        <input class="input_Check" type="checkbox" id="Id_languageRus" name="languageRus" value="true">
+        <label class="input_CheckLabel" for="Id_languageRus">Русский</label><br>
+        <input class="input_Check" type="checkbox" id="Id_languageEng" name="languageEng" value="true">
+        <label class="input_CheckLabel" for="Id_languageEng">English</label><br>
+
+      </div>
+
+      <div class="formFooter">
+        <div class="divSubmitButton">
+          <button class="buttonSubmit" type="submit">Надіслати</button>
+        </div>
+        <div class="divResetButton">
+          <button class="buttonReset" type="reset">Очистити</button>
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
+
+  <hr class="chapter_separator">
+
+  <div class="container">
+    <div class="divColumns">
+      <div class="divTitle">
+        <p>
+          Title <br> Title
+        </p>
+      </div>
+      <div class="divColumnLeft">
+        <p>
+          Left <br> Left <br> Left
+        </p>
+  
+      </div>
+      <div class="divColumnRight">
+        <p>
+          Right <br> Right <br> Right <br> Right
+        </p>
+  
+      </div>
+      <div class="divColumnCenter">
+        <p>
+          Center <br> Center
+        </p>
+  
+      </div>
+      <div class="divFooter">
+          <p>
+              Footer <br> Footer
+          </p>
+        </div>
+    </div>
+  </div>
+
+  <hr class="chapter_separator">
+
+  <div class="container">
+
+
+
+  </div>
+
+  <hr class="chapter_separator">
+
+</body>
+
+</html>
